@@ -1,0 +1,23 @@
+.navbar-nav .nav-link {
+  color: gray;
+}
+
+.navbar-nav .nav-link:hover {
+  color: black;
+}
+
+@media (min-width: 992px) { 
+  .navbar-brand {
+    margin-right: auto; 
+  }
+
+  .link-box {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+}
