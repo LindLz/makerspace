@@ -1,0 +1,11 @@
+.card {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card-body {
+  padding: 20px;
+}
+.big-number {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}

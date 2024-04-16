@@ -1,28 +1,9 @@
-<header class="py-4">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="d-flex align-items-center justify-content-between w-100">
-        <a class="navbar-brand"routerLink="/homepage"><img src="/assets/logo.svg" class="box mb-0" alt="Logo"></a>
-        <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
-          <span class="navbar-toggler-icon" #togglerIcon></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" [ngClass]="{'show': isNavbarOpen}" id="navbarNav">
-        <div class="link-box" #linkBox>
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/homepage" (click)="closeNavbar()">Homepage</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/trainings" (click)="closeNavbar()">Trainings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/about" (click)="closeNavbar()">About</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<div *ngIf="showLoader" class="loader-container">
+  <img src="/assets/small-logo.svg" alt="Fixed Picture" class="fixed-picture">
+  <div class="loader" id="loader">
+    <div class="progress" id="progressBar"></div>
   </div>
-</header>
-<router-outlet></router-outlet>
+</div>
+
+
+<router-outlet *ngIf="!showLoader"></router-outlet>
