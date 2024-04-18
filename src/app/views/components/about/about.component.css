@@ -1,14 +1,34 @@
-[nz-carousel-content] {
-  text-align: center;
-  height: 160px;
-  line-height: 160px;
-  background: #364d79;
-  color: #fff;
-  overflow: hidden;
+.title{
+  color: #ff5500;
+}
+body {
+  background: #444;
 }
 
-h3 {
-  color: #fff;
-  margin-bottom: 0;
-  user-select: none;
+.cardCont {
+  width: 250px;
+  height: 400px;
+  float: left;
+  margin-right: 10px;
+  position: relative;
 }
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 250px;
+  height: 400px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+/* .cardBack {
+}
+
+.playcardFront {
+}
+
+.playcardBack {
+} */
