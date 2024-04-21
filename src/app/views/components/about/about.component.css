@@ -1,34 +1,7 @@
 .title{
   color: #ff5500;
 }
-body {
-  background: #444;
+.margin{
+  height: 1000px;
 }
 
-.cardCont {
-  width: 250px;
-  height: 400px;
-  float: left;
-  margin-right: 10px;
-  position: relative;
-}
-
-.cardFront,
-.cardBack {
-  position: absolute;
-  width: 250px;
-  height: 400px;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-}
-
-/* .cardBack {
-}
-
-.playcardFront {
-}
-
-.playcardBack {
-} */

@@ -4,8 +4,16 @@
 }
 .card-body {
   padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
 }
 .big-number {
   font-size: 3rem;
   margin-bottom: 10px;
+}
+
+.card-img{
+  height: 30px;
+  width: auto;
+
 }

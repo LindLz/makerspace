@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+/* Animation styles for larger screens */
+@media screen and (min-width: 768px) {
+  .animated-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideFromLeft 1s ease-in-out forwards;
+  }
+
+  .animated-right {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideFromRight 1s ease-in-out forwards;
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.orange-button {
+  border: 2px solid #ff5500 !important;
+  background-color: #ff5500 !important;
+  color: #fff !important;
+  border-radius: 40px;
+  width: fit-content;
+  height: 51px;
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+  padding: 0 20px; 
+}
+
+.card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+}

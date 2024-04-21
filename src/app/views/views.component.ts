@@ -13,11 +13,10 @@ export class ViewsComponent implements AfterViewInit, OnInit {
 
   ngOnInit(): void {
     this.animationService.animateLinksIn(this.linkBox);
-    this.animationService.animateLogo();
+  //  this.animationService.animateLogo();
   }
 
   ngAfterViewInit() {
-
 
   }
 

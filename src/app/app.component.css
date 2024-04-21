@@ -1,28 +1,7 @@
-.navbar-nav .nav-link {
-  color: gray;
-}
 
-.navbar-nav .nav-link:hover {
-  color: black;
-}
-
-@media (min-width: 992px) { 
-  .navbar-brand {
-    margin-right: auto; 
-  }
-
-  .link-box {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-  }
-
-  .navbar-nav {
-    margin-left: auto;
-  }
-}
 body {
   margin: 0;
+  max-width: 100%;
   max-height: 100vh;
   color: white;
 }
@@ -36,7 +15,7 @@ body {
 }
 .fixed-picture {
   position: absolute;
-  top: 40%; /* Adjust top position as needed */
+  top: 40%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;

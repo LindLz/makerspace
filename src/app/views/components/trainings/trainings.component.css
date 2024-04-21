@@ -1,11 +1,3 @@
-[nz-carousel-content] {
-  text-align: center;
-  height: 160px;
-  line-height: 160px;
-  background: #364d79;
-  color: #fff;
-  overflow: hidden;
-}
 
 h3 {
   color: #fff;
@@ -15,9 +7,6 @@ h3 {
 
 .title{
   color: #ff5500;
-}
-body {
-  background: #444;
 }
 
 .cardCont {
@@ -60,16 +49,9 @@ body {
     display: none;
   }
 }
-.orange-button {
-  border: 2px solid #ff5500 !important;
-  background-color: #ff5500 !important;
-  color: #fff !important;
-  border-radius: 40px;
-  width: fit-content;
-  height: 51px;
-  display: flex; 
-  align-items: center;
-  justify-content: center; 
-  text-align: center; 
-  padding: 0 20px; 
+
+.social-link{
+  color: #b3cef7;
+  pointer-events: none; 
+  cursor: not-allowed;
 }
